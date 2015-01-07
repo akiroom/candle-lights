@@ -14,7 +14,7 @@ Candle-like blinking LED.
 
 ### Hard-wiring
 
-![hardwiring](https://raw.githubusercontent.com/akiroom/candle-lights/master/hardwiring/candle-lights.png =549x)
+![hardwiring](https://raw.githubusercontent.com/akiroom/candle-lights/master/hardwiring/candle-lights.png)
 
 ## Codes
 
