@@ -3,8 +3,18 @@ Candle Lights
 
 Candle-like blinking LED.
 
-Preview:
+## Preview
+
+### Image
+
+![image](https://raw.githubusercontent.com/akiroom/candle-lights/master/image.jpg)
+
+### Movie
 [https://vine.co/v/OpAvTmFuQDx](https://vine.co/v/OpAvTmFuQDx)
+
+### Hard-wiring
+
+![hardwiring](https://raw.githubusercontent.com/akiroom/candle-lights/master/hardwiring/candle-lights.png =549x)
 
 ## Codes
 
