@@ -6,8 +6,8 @@
 
 int led = 9;           // the pin that the LED is attached to
 int brightness = 0;    // how bright the LED is
-int fadeAmount = 1;    // how many points to fade the LED by
-int nextTarget = 128;
+int fadeDirection = 1; // which direction to fade the LED for
+int nextTarget = 48;
 
 // the setup routine runs once when you press reset:
 void setup()  { 
@@ -21,18 +21,18 @@ void loop()  {
   analogWrite(led, brightness);    
 
   // change the brightness for next time through the loop:
-  brightness = brightness + fadeAmount * random(1, 6);
+  brightness = brightness + fadeDirection * random(1, 6);
 
   // reverse the direction of the fading at the ends of the fade: 
-  if (fadeAmount < 0 && brightness < nextTarget) {
+  if (fadeDirection < 0 && brightness < nextTarget) {
     brightness = nextTarget;
     nextTarget = random(32, 48);
-    fadeAmount = 1;
+    fadeDirection = 1;
   }
-  if (fadeAmount > 0 && brightness > nextTarget) {
+  if (fadeDirection > 0 && brightness > nextTarget) {
     brightness = nextTarget;
     nextTarget = random(16, 32);
-    fadeAmount = -1;
+    fadeDirection = -1;
   }
   
   delay(10);
